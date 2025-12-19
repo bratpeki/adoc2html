@@ -1,0 +1,26 @@
+
+= adoc2html, a compliler I'll never finish
+
+== What is this project?
+
+`adoc2html` is intended to be a simple compiler converting AsciiDoc files to HTML.
+
+The output HTML intends to not be overly bloated with unnecessary items and is meant to be
+easily customizable with CSS. I plan on adding a few example CSS styles and the ability to
+import them via the CLI flags.
+
+== Technologies
+
+The compiler will (maybe) be written in ANSI C, adhering to the standards defined in the
+Port70 C89 draft (https://port70.net/~nsz/c/c89/c89-draft.html[original],
+https://github.com/bratpeki/port70-ansi-c-draft[backup on my GitHub]).
+
+AsciiDoc is currently
+https://gitlab.eclipse.org/eclipse/asciidoc-lang/asciidoc-lang[still in the process
+of being standardized], and the latest build of the standard is `0.3.0`.
+Therefore, this compiler relies on the popular AsciiDoctor project, which features a
+https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[Quick Reference].
+It also comes in
+https://docs.asciidoctor.org/asciidoc/latest/_exports/asciidoc-pre-spec.pdf#syntax-quick-reference[PDF].
+This is my main reference for the language specification as of now.
+
