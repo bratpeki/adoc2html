@@ -5,6 +5,7 @@
 #include <stddef.h>
 #include <string.h>
 
+/* String equality shortcut */
 #define STREQ( s1, s2 ) ( strcmp(s1, s2) == 0 )
 
 /*
