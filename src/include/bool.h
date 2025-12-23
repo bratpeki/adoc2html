@@ -4,7 +4,12 @@
 
 /* Booleans */
 
-typedef enum { FALSE, TRUE } bool;
+enum {
+	FALSE = 0,
+	TRUE = 1
+};
+
+typedef int bool;
 
 #endif
 
