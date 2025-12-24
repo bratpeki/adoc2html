@@ -1,6 +1,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <assert.h>
 
 #include "./include/ecode.h"
 #include "./include/printutil.h"
@@ -34,8 +35,11 @@ int main( int argc, char** argv ) {
 
 	/* Print results */
 
+	assert( filepath != NULL );
+	assert( outpath != NULL );
+
 	printutil("FILEPATH: ", PRINTUTIL_INFO); printf("%s\n", filepath);
-	if (outpath) { printutil("OUTPATH:  ", PRINTUTIL_INFO); printf("%s\n", outpath); }
+	printutil("OUTPATH:  ", PRINTUTIL_INFO); printf("%s\n", outpath);
 	if (csspath) { printutil("CSSPATH:  ", PRINTUTIL_INFO); printf("%s\n", csspath); }
 
 	/* Process the files */
