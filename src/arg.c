@@ -1,5 +1,6 @@
 
 #include "include/arg.h"
+#include "include/path.h"
 #include "include/printutil.h"
 #include "include/strutil.h"
 #include "include/ecode.h"
@@ -20,6 +21,7 @@ ecode processCliArgs(
 ) {
 
 	int i;
+	char* filepathTrimmed;
 
 	/* We need at least the program name and the ADOC file */
 
@@ -109,9 +111,14 @@ ecode processCliArgs(
 	/* TODO: ./adoc2html -o -o a.adoc ---> `-o` is the `outpath` */
 
 	/* If there's no outpath specified, let's make it */
+
 	if (*outpath == NULL) {
 
-		/* TODO: *outpathAllocated = TRUE; */
+		filepathTrimmed = trimExtension(*filepath);
+		*outpath = concatenate(filepathTrimmed, ".html");
+		free(filepathTrimmed);
+
+		*outpathAllocated = TRUE;
 
 	}
 

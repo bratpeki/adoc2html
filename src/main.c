@@ -40,8 +40,6 @@ int main( int argc, char** argv ) {
 
 	/* Process the files */
 
-
-
 	/* Cleanup */
 
 	if ( outpathAllocated ) free(outpath);

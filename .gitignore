@@ -56,3 +56,4 @@ dkms.conf
 
 # mine
 adoc2html
+*.html
