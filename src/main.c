@@ -7,6 +7,7 @@
 #include "./include/printutil.h"
 #include "./include/bool.h"
 #include "./include/arg.h"
+#include "./include/file.h"
 
 int main( int argc, char** argv ) {
 
@@ -43,6 +44,11 @@ int main( int argc, char** argv ) {
 	if (csspath) { printutil("CSSPATH:  ", PRINTUTIL_INFO); printf("%s\n", csspath); }
 
 	/* Process the files */
+
+	retcode = processFile(filepath);
+	if ( retcode == ECODE_BADARG ) {
+		printutil("Couldn't open file!\n", PRINTUTIL_ERROR);
+	}
 
 	/* Cleanup */
 

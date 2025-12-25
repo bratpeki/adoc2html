@@ -3,6 +3,7 @@ CC=gcc -ansi -Wall -Wextra -Wpedantic -O2
 C=$(shell find . -name "*.c")
 OUT=adoc2html
 LNK=
+TESTING=ex/basic.adoc
 
 build:
 	@$(CC) -o $(OUT) $(C) $(LNK)
@@ -14,5 +15,5 @@ clean:
 	@if [ -f $(OUT) ]; then rm $(OUT); fi
 
 exec:
-	@./$(OUT)
+	@./$(OUT) $(TESTING)
 
