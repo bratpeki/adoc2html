@@ -1,4 +1,6 @@
 
+/* include/arg.h */
+
 #ifndef ADOC2HTML_ARG
 #define ADOC2HTML_ARG
 

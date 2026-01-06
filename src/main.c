@@ -1,4 +1,6 @@
 
+/* main.c */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
@@ -29,9 +31,13 @@ int main( int argc, char** argv ) {
 	);
 
 	switch (retcode) {
+
 		case ECODE_BADARG:
 		case ECODE_NOARG:
 			return retcode;
+
+		default: break;
+
 	}
 
 	/* Print results */

@@ -1,4 +1,6 @@
 
+/* include/vector.h */
+
 #ifndef ADOC2HTML_VECTOR
 #define ADOC2HTML_VECTOR
 
@@ -11,11 +13,13 @@
 
 /*
  * This is an example of an integer vector.
- * typedef struct ivec {
- *   int *items;
- *   size_t count;
- *   size_t capacity;
- * } ivec_t;
+ * typedef struct _ivec {
+ *     int* items;
+ *     size_t count;
+ *     size_t capacity;
+ * } ivec;
+ *
+ * As long as the structure is like that, you can use whatever type you like.
  */
 
 /*

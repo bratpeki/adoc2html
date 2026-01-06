@@ -1,4 +1,6 @@
 
+/* include/path.h */
+
 #ifndef ADOC2HTML_PATH
 #define ADOC2HTML_PATH
 
@@ -11,11 +13,11 @@
 
 /* String vector */
 
-struct strvec {
+typedef struct _strvec {
 	char* items;
 	size_t count;
 	size_t capacity;
-};
+} strvec;
 
 /*
  * Returns a new string with the extension trimmed.

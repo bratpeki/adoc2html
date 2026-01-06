@@ -1,5 +1,5 @@
 
-= adoc2html, a compliler I'll never finish
+= adoc2html, a compiler I'll never finish
 
 == What is this project?
 

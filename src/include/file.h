@@ -1,4 +1,6 @@
 
+/* include/file.h */
+
 #ifndef ADOC2HTML_FILE
 #define ADOC2HTML_FILE
 

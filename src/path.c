@@ -1,10 +1,12 @@
 
+/* path.c */
+
 #include "include/path.h"
 #include "include/vector.h"
 
 char* trimExtension( char* path ) {
 
-	struct strvec out = { 0, 0, 0 };
+	strvec out = { 0, 0, 0 };
 
 	char* dotPos = strrchr(path, '.');
 
@@ -32,7 +34,7 @@ char* trimExtension( char* path ) {
 
 char* concatenate( char* str1, char* str2 ) {
 
-	struct strvec out = { 0, 0, 0 };
+	strvec out = { 0, 0, 0 };
 
 	int i;
 

@@ -1,0 +1,29 @@
+
+= ANSI C coding convention doc
+:toc:
+
+Best suited for small ANSI C projects, since it's not professional at all!
+
+== Variables
+
+`camelCase`.
+
+== Macros
+
+`SCREAMING_SNAKE_CASE`, specifically `WHEREISITFROM_WHATDOESITDO`.
+
+Examples include `VECTOR_APPEND`, `LINKEDLIST_FREE`, etc.
+
+== Typedef on structs and enums
+
+[source,c]
+----
+typedef struct _structName {
+	/* Data goes here */
+} structName;
+
+typedef enum _enumName {
+	/* Data goes here */
+} enumName;
+----
+

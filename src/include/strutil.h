@@ -1,4 +1,6 @@
 
+/* include/strutil.h */
+
 #ifndef ADOC2HTML_STRUTIL
 #define ADOC2HTML_STRUTIL
 
